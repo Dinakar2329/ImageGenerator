@@ -27,10 +27,11 @@ Clone this repository:
 ```
 2.Set up your OpenAI API key:
 
-Replace ## "YOUR_API_KEY_HERE" 
+Replace 
+## YOUR_API_KEY_HERE
 with your actual OpenAI API key in the api_key field.
 
-##Usage
+## Usage
 1.Run the Streamlit app:
    ```bash
    python -m streamlit run app.py
