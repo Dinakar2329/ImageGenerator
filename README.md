@@ -1,6 +1,6 @@
 # Image Generator using OpenAI DALL-E API and Streamlit
 
-![DALL-E Image Generator]([https://your-image-generator-url.com/images/dalle_logo.png](https://labs.openai.com/))
+![DALL-E Image Generator]([[https://your-image-generator-url.com/images/dalle_logo.png](https://labs.openai.com/)](https://www.bing.com/ck/a?!&&p=9e09c027ee2a7364JmltdHM9MTcwNjIyNzIwMCZpZ3VpZD0wM2ZiMTdiMi1iZWQxLTY4MDktMjg1NC0wNWMzYmYwMzY5ZjEmaW5zaWQ9NTY4Ng&ptn=3&ver=2&hsh=3&fclid=03fb17b2-bed1-6809-2854-05c3bf0369f1&u=a1L2ltYWdlcy9zZWFyY2g_cT1kYWxsZSBlIGxvZ28mRk9STT1JUUZSQkEmaWQ9Qzg2QzlENjQxRUREMzYxOTRBRUVGMzQzMDE1OTA1RjZDMTNDMTJFNg&ntb=1))
 
 ## Overview
 
@@ -14,11 +14,12 @@ Welcome to the Image Generator powered by OpenAI's DALL-E API and presented thro
 
 ## Installation
 
-1. Clone this repository:
+Clone this repository:
 
-   ```bash
+  ```bash
    git clone https://github.com/your-username/image-generator.git
    cd image-generator
+```
 
 1.Install dependencies:
    ```bash
