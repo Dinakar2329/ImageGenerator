@@ -34,11 +34,19 @@ button = st.button("Generate Images")
 col1, col2, col3, col4 = st.columns(4)
 # If button is clicked
 if button or input_bar:
-    try:
-        image_urls1, image_urls2, image_urls3, image_urls4 = Generate(input_bar)
-        col1.image(image_urls1, caption="Image 1")
-        col2.image(image_urls2, caption="Image 2")
-        col3.image(image_urls3, caption="Image 3")
-        col4.image(image_urls4, caption="Image 4")
-    except Exception as e:
-        st.error(f"Error generating images: {e}")
+    with st.spinner("Generating Images..."):
+        # Use empty() to create a placeholder for the images
+        image_placeholder1 = col1.empty()
+        image_placeholder2 = col2.empty()
+        image_placeholder3 = col3.empty()
+        image_placeholder4 = col4.empty()
+
+        try:
+            image_urls1, image_urls2, image_urls3, image_urls4 = Generate(input_bar)
+            # Update the placeholders with the generated images
+            image_placeholder1.image(image_urls1, caption="Image 1")
+            image_placeholder2.image(image_urls2, caption="Image 2")
+            image_placeholder3.image(image_urls3, caption="Image 3")
+            image_placeholder4.image(image_urls4, caption="Image 4")
+        except Exception as e:
+            st.error(f"Error generating images: {e}")
