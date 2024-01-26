@@ -1,6 +1,6 @@
 # Image Generator using OpenAI DALL-E API and Streamlit
 
-![DALL-E Image Generator](https://your-image-generator-url.com/images/dalle_logo.png)
+![DALL-E Image Generator]([https://your-image-generator-url.com/images/dalle_logo.png](https://labs.openai.com/))
 
 ## Overview
 
@@ -21,19 +21,23 @@ Welcome to the Image Generator powered by OpenAI's DALL-E API and presented thro
    cd image-generator
 
 1.Install dependencies:
-   ```pip install streamlit openai```
+   ```bash
+   pip install streamlit openai
+```
 2.Set up your OpenAI API key:
 
-Replace ##"YOUR_API_KEY_HERE" 
+Replace ## "YOUR_API_KEY_HERE" 
 with your actual OpenAI API key in the api_key field.
 
 ##Usage
 1.Run the Streamlit app:
-   ```python -m streamlit run app.py```
+   ```bash
+   python -m streamlit run app.py
+```
 2.Enter a prompt in the input bar and click the "Generate Images" button.
 
 Streamlit App Code
-```
+```bash
 import streamlit as st
 from openai import OpenAI
 
@@ -81,3 +85,4 @@ if button or input_bar:
     except Exception as e:
         st.error(f"Error generating images: {e}") 
 ```
+Make sure to replace ```"YOUR_API_KEY_HERE"``` with your actual OpenAI API key. Happy generating!
